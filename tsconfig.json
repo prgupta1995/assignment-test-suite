@@ -3,7 +3,10 @@
         "baseUrl": ".",
         "target": "es5",
         "lib": ["es5", "dom"],
-        "types": ["cypress", "node"]
+        "types": ["cypress", "node"],
+        "paths": {
+            "@pageObjects/*": ["./cypress/page_objects/*"]
+        }
     },
     "include": ["**/*.ts"]
 }
