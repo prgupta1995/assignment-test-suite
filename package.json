@@ -1,36 +1,39 @@
 {
-  "name": "assignment-test-suite",
-  "version": "1.0.0",
-  "description": "assignment test cases automation",
-  "main": "index.js",
-  "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "cypress:run:chrome": "cypress run -- browser chrome",
-    "httpserver": "http-server -p 3000"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/prgupta1995/assignment-test-suite.git"
-  },
-  "author": "Priyanka",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/prgupta1995/assignment-test-suite/issues"
-  },
-  "homepage": "https://github.com/prgupta1995/assignment-test-suite#readme",
-  "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^20.0.6",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
-    "cypress": "^13.11.0",
-    "esbuild": "^0.21.5",
-    "http-server": "^14.1.1",
-    "_comments": "Installed http-server to create a server to run task.html file",
-    "typescript": "^5.4.5"
-  },
-  "cypress-cucumber-preprocessor": {
-    "stepDefinitions": [
-      "cypress/e2e/step_definitions/*.ts"
-    ]
-  }
+    "name": "assignment-test-suite",
+    "version": "1.0.0",
+    "description": "assignment test cases automation",
+    "main": "index.js",
+    "scripts": {
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run",
+        "cypress:run:chrome": "cypress run -- browser chrome",
+        "cypress:run:headless": "cypress run --headless",
+        "_comments": "Installed http-server to create a server to run task.html file",
+        "httpserver": "http-server -p 3000",
+        "prettier": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/prgupta1995/assignment-test-suite.git"
+    },
+    "author": "Priyanka",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/prgupta1995/assignment-test-suite/issues"
+    },
+    "homepage": "https://github.com/prgupta1995/assignment-test-suite#readme",
+    "devDependencies": {
+        "@badeball/cypress-cucumber-preprocessor": "^20.0.6",
+        "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
+        "cypress": "^13.11.0",
+        "esbuild": "^0.21.5",
+        "http-server": "^14.1.1",
+        "prettier": "^3.3.2",
+        "typescript": "^5.4.5"
+    },
+    "cypress-cucumber-preprocessor": {
+        "stepDefinitions": [
+            "cypress/e2e/step_definitions/*.ts"
+        ]
+    }
 }
