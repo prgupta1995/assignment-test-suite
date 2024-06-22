@@ -78,8 +78,11 @@ The project has the following file structure:
 ```
 
 The `e2e` folder contains the feature file and the step definitions that implement the test.
+
 The `page_objects` folder contains the page objects that implement the test.
+
 The `fixtures` folder contains the json data for api request.
+
 The `package.json` file lists the project metadata and dependencies.
 
 ### Test Results
